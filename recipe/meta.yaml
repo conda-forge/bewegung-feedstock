@@ -22,7 +22,7 @@ requirements:
     - datashader
     - ffmpeg
     - ipython
-    - matplotlib
+    - matplotlib-base
     - librsvg
     - numba
     - numpy
