@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bewegung-{{ version }}.tar.gz
-  sha256: 7fafbd7ad69d4c640fd8f377169d88f0dc94c7ca8b8363bce3f1ed98b49132cf
+  sha256: fc7ce7252254c9454abf60897d0d49f300a8ff7f93c5eaafe78f0e62f4461d87
 
 build:
   number: 0
