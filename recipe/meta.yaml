@@ -1,5 +1,5 @@
 {% set name = "bewegung" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bewegung-{{ version }}.tar.gz
-  sha256: a5bb4dc571bb33cb6b0c8b8abd886d10974410d52b9f018c7f7a736587d3ed25
+  sha256: fc7ce7252254c9454abf60897d0d49f300a8ff7f93c5eaafe78f0e62f4461d87
 
 build:
   number: 0
