@@ -1,5 +1,5 @@
 {% set name = "bewegung" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bewegung-{{ version }}.tar.gz
-  sha256: 5b6643e6ddce761cf9d65301614bd59c62d8f10868934e4442b67b992e549479
+  sha256: bd6852e83b1723141675e60418341f1c9aebe7c055e2821093a73719d73cd45e
 
 build:
   number: 0
@@ -37,7 +37,7 @@ requirements:
 test:
   imports:
     - bewegung
-    - bewegung.core.backends.drawingboard.core
+    - bewegung.drawingboard
   commands:
     - pip check
   requires:
