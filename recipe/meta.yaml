@@ -37,7 +37,7 @@ requirements:
 test:
   imports:
     - bewegung
-    - bewegung.core.backends.drawingboard.core
+    - bewegung.drawingboard
   commands:
     - pip check
   requires:
