@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bewegung-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bewegung-{{ version }}.tar.gz
   sha256: 137c6f2df36568dcd5ce55b289ad5ff7102e0d14632d9731fb1e1f6f622dffc4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - datashader
     - ffmpeg
@@ -30,7 +30,7 @@ requirements:
     - pillow
     - pycairo
     - pygobject
-    - python >=3.6
+    - python >={{ python_min }}
     - tqdm
     - typeguard
 
@@ -42,6 +42,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pleiszenburg/bewegung
